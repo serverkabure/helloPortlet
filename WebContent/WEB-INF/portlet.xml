@@ -9,8 +9,16 @@
 		<display-name>helloPortlet</display-name>
 		<portlet-class>hello.HelloPortlet</portlet-class>
 		<init-param>
-			<name>javax.portlet.faces.defaultViewId.view</name>
-			<value>/view.jsp</value>
+			<name>viewPage</name>
+			<value>/jsp/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>editPage</name>
+			<value>/jsp/edit.jsp</value>
+		</init-param>
+		<init-param>
+			<name>helpPage</name>
+			<value>/jsp/help.jsp</value>
 		</init-param>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -21,7 +29,7 @@
 		<portlet-info>
 			<title>helloPortlet</title>
 			<short-title>helloPortlet</short-title>
-			<keywords >hello</keywords>
+			<keywords>hello</keywords>
 		</portlet-info>
 	</portlet>
 </portlet-app>
